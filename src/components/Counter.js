@@ -22,10 +22,11 @@ function Counter() {
 
   return (
     <div className="counter">
+        <h2>Contador React</h2>
         <Select number={number} setNumber={setNumber} />
-        <h2>{count}</h2>
-        <Button value={`Subtrai ${number}`} operation={sub} />
-        <Button value={`Adiciona ${number}`} operation={add} />
+        <h1>{count}</h1>
+        <Button value={`- ${number}`} operation={sub} />
+        <Button value={`+ ${number}`} operation={add} />
         <div>
           <Button value="Reset" operation={reset} />
         </div>
