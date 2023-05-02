@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/contador-react-teste/static/css/main.20654d80.css",
+    "main.css": "/contador-react-teste/static/css/main.eb4d6a9e.css",
     "main.js": "/contador-react-teste/static/js/main.07ec1571.js",
     "index.html": "/contador-react-teste/index.html",
-    "main.20654d80.css.map": "/contador-react-teste/static/css/main.20654d80.css.map",
+    "main.eb4d6a9e.css.map": "/contador-react-teste/static/css/main.eb4d6a9e.css.map",
     "main.07ec1571.js.map": "/contador-react-teste/static/js/main.07ec1571.js.map"
   },
   "entrypoints": [
-    "static/css/main.20654d80.css",
+    "static/css/main.eb4d6a9e.css",
     "static/js/main.07ec1571.js"
   ]
 }
