@@ -19,7 +19,7 @@ html{
 
 .counter {
     background-color: green;
-    padding: 2rem;
+    padding: 3rem 2rem;
     border-radius: .5rem;
     width: 45rem;
     text-align: center;
@@ -30,21 +30,22 @@ html{
 }
 
 .counter h1{
-    font-size: 8rem;
+    font-size: 6rem;
     background-color: white;
     width: 10rem;
+    line-height: 10rem;
     margin: 0 auto;
     border-radius: 50%;
 }
 
 .select{
     font-size: 2.5rem;
+    margin: 2rem 0;
 }
 
 .select--list{
     font-size: 3rem;
-    margin-left: 1rem;
-    
+    margin-left: 1rem;   
     border-radius: 25%;
 }
 
@@ -53,10 +54,10 @@ html{
 }
 
 .button {
-    font-size: 20px;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 5px;
+    font-size: 2.5rem;
+    padding: 1rem;
+    margin: 2rem 1rem 0rem 1rem;
+    border-radius: 50%;
     border: 1px solid black;
 }
 

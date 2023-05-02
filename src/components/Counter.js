@@ -26,10 +26,8 @@ function Counter() {
         <Select number={number} setNumber={setNumber} />
         <h1>{count}</h1>
         <Button value={`- ${number}`} operation={sub} />
-        <Button value={`+ ${number}`} operation={add} />
-        <div>
-          <Button value="Reset" operation={reset} />
-        </div>
+        <Button value="Reset" operation={reset} />
+        <Button value={`+ ${number}`} operation={add} />       
     </div>
   )
 }
