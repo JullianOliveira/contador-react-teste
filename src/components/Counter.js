@@ -22,7 +22,7 @@ function Counter() {
 
   return (
     <div className="counter">
-        <h2>Contador React</h2>
+        <h2>CONTADOR REACT</h2>
         <Select number={number} setNumber={setNumber} />
         <h1>{count}</h1>
         <Button value={`- ${number}`} operation={sub} />
