@@ -44,7 +44,7 @@ html{
     font-size: 10rem;
     width: 20rem;
     color: var(--white);
-
+    font-weight: 400;
 }
 
 .counter .container{
