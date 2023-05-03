@@ -1,15 +1,24 @@
-* {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+:root{
+    --white: #fffafa;
+    --black: #0c0c0c;
+    --dark-green: #182c25;
+}
+
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 html{
     font-size: 62.5%;
 }
 
-.App {
-    background-image: linear-gradient(to bottom right, #233329, #011503);
+.App{
+    background-color: var(--black);
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -17,8 +26,8 @@ html{
     padding: 2.5rem;
 }
 
-.counter {
-    background-color: green;
+.counter{
+    background-color: var(--dark-green);
     padding: 3rem 2rem;
     border-radius: .5rem;
     width: 45rem;
@@ -27,43 +36,56 @@ html{
 
 .counter h2{
     font-size: 3rem;
+    margin-bottom: 2rem;
+    color: var(--white);
 }
 
 .counter h1{
-    font-size: 6rem;
-    background-color: white;
-    width: 10rem;
-    line-height: 10rem;
-    margin: 0 auto;
-    border-radius: 50%;
+    font-size: 10rem;
+    width: 20rem;
+    color: var(--white);
+
 }
 
-.select{
-    font-size: 2.5rem;
+.counter .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 2rem 0;
 }
 
-.select--list{
-    font-size: 3rem;
-    margin-left: 1rem;   
-    border-radius: 25%;
+.select label{
+    font-size: 2.5rem;
+    color: var(--white);
 }
 
-.select--list:hover {
+.select select{
+    font-size: 2.5rem;   
+    border-radius: 0.5rem;
+}
+
+.select select:hover{
     cursor: pointer;
 }
 
-.button {
+.button{
     font-size: 2.5rem;
-    padding: 1rem;
-    margin: 2rem 1rem 0rem 1rem;
-    border-radius: 50%;
-    border: 1px solid black;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 0.5rem;
+    background-color: var(--black);
+    color: var(--white);
+    border: none;
+    transition: 0.2s linear;
 }
 
 .button:hover{
     scale: 1.2;
     cursor: pointer;
+}
+
+.reset{
+    width: 10rem;
 }
 
 /* media queries */
@@ -85,89 +107,3 @@ html{
         font-size: 50%;
     }
 }
-
-/*
-
- vcvc importar google fonts 
-
-:root{
-    --main-color: #ff0;
-    --light-white: rgba(255,255,255,.5);
-    --light-black: rgba(0,0,0,.3);
-    --light-bg: rgba(255,255,255,.1);
-    --white: #fff;
-    --black: #000;
-    --gray: #333;
-}
-
-*{
-    font-family: ;
-    margin: 0; padding: 0;
-    box-sizing: border-box;
-    outline: none;
-    text-decoration: none;
-    text-transform: capitalize;
-}
-
-
-
-
-
-section{
-    margin: 0 auto;
-    max-width: 1200px;
-    padding: 2rem;
-    border: 1px solid yellow;
-}
-
-
-
-.home .flex{
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.home .flex form{
-    background-color: var(--light-bg);
-    border-radius: .5rem;
-    padding: 2rem;
-    width: 50rem;
-    color: white;
-    text-align: center;
-}
-
-.home .flex form h2{
-    font-size: 2.5rem;  
-}
-
-.home .flex form h1{
-    font-size: 5rem;
-}
-
-
-
-/* media queries 
-
-@media (max-width:991px){
-    html{
-        font-size: 55%;
-    }
-}
-
-@media (max-width:768px){
-    html{
-        font-size: 55%;
-    }
-}
-
-@media (max-width:450px){
-    html{
-        font-size: 50%;
-    }
-}
-
-
-
-*/

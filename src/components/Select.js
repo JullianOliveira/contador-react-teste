@@ -8,8 +8,8 @@ function Select({ number, setNumber }) {
 
   return (
     <div className="select">
-      <label>Escolha um número:</label>
-      <select className="select--list" value={number} onChange={handleChange} >
+      <label>Escolha um número: </label>
+      <select value={number} onChange={handleChange} >
         {numbers.map(number => <option key={number} value={number}>{number}</option>)}
       </select>
     </div>

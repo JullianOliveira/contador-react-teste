@@ -1,7 +1,7 @@
 
-function Button({ value, operation }) {
+function Button({ value, operation, isReset }) {
   return (
-    <button className='button' onClick={operation} >{value}</button>
+    <button className={isReset === true ? "button reset" : "button"} onClick={operation} >{value}</button>
   )
 }
 

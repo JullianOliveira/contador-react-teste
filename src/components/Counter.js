@@ -8,12 +8,10 @@ function Counter() {
 
   function sub() {
     setCount(prevCount => prevCount - number);
-    console.log(typeof number)
   }
   
   function add() {
     setCount(prevCount => prevCount + number);
-    console.log(typeof number)
   }
 
   function reset() {
@@ -24,10 +22,14 @@ function Counter() {
     <div className="counter">
         <h2>CONTADOR REACT</h2>
         <Select number={number} setNumber={setNumber} />
-        <h1>{count}</h1>
-        <Button value={`- ${number}`} operation={sub} />
-        <Button value="Reset" operation={reset} />
-        <Button value={`+ ${number}`} operation={add} />       
+        <div class="container">
+          <Button value={`-${number}`} operation={sub} isReset={false} />
+          <h1>{count}</h1>
+          <Button value={`+${number}`} operation={add} isReset={false} />
+        </div>
+        <div>
+          <Button value="Reset" operation={reset} isReset={true} />    
+        </div>  
     </div>
   )
 }
