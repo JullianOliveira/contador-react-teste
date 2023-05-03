@@ -96,12 +96,6 @@ html{
     }
 }
 
-@media (max-width:768px){
-    html{
-        font-size: 55%;
-    }
-}
-
 @media (max-width:450px){
     html{
         font-size: 50%;
